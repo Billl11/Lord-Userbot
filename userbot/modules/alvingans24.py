@@ -42,6 +42,22 @@ async def koc(e):
         await e.edit("༼ ༎ຶ ෴ ༎ຶ༽")
 
 
+@register(outgoing=True, pattern='^.ayam(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`\n(\\_/)`"
+                     "`\n(●_●)`"
+                     "`\n />🥚 *Tolong jagain`")
+    sleep(3)
+    await typew.edit("`\n(\\_/)`"
+                     "`\n(●_●)`"
+                     "`\n/>🐣  *Tolong urus`")
+    sleep(2)
+    await typew.edit("`\n(\\_/)`"
+                     "`\n(●_●)`"
+                     "`\n🐔<\\  *Terimakasih sudah ngurus`")
+
+
 @register(outgoing=True, pattern='^.huh(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -179,13 +195,13 @@ async def _(event):
 CMD_HELP.update({
     "animasi":
     "`.nah` ; `.huh` ; `.owner`\
-    \nPenjelasan: cobain.\
+    \nUsage: cobain.\
     \n\n`.bunga` ; `.buah`\
-    \nPenjelasan: animasi.\
+    \nUsage: animasi.\
     \n\n`.waktu`\
-    \nPenjelasan: animasi.\
+    \nUsage: animasi.\
     \n\n`.hua`\
-    \nPenjelasan: nangis.\
+    \nUsage: nangis.\
     \n\n`.ceritacinta` ; `.canda`\
-    \nPenjelasan: liat sendiri"
+    \nUsage: liat sendiri"
 })
